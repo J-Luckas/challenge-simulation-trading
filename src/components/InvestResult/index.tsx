@@ -6,7 +6,7 @@ import { CardGraph } from '../CardGraph/index';
 export function InvestResult(){
 
     const { simulations } = useSimulations();
-    if(simulations.length === 0)  {
+    if( simulations === undefined || simulations.length === 0)  {
         return (
             <Container>
             </Container>
