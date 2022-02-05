@@ -7,7 +7,7 @@
 - Desejável que tenha o node para rodar o banco de dados fake.
 
 ## Inicialização do projeto
-##### Com todos os requisitos atendidos:
+#### Com todos os requisitos atendidos:
 - Clonar o repositório
 - yarn json-server db.json / npx json-server db.json -> NA PORTA 3000
 - Executar docker-compose up;
