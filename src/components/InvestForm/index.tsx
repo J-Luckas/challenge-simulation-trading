@@ -97,6 +97,7 @@ export function InvestForm(){
                             <div className="inner"></div>
                             <LabelOptions 
                                 htmlFor="liquido"
+                                id="liquidoLabel" 
                                 isActive = { yieldInput === 'liquido' }
                             >
                                 { yieldInput === 'liquido' && <FiCheckSquare size={16}/>}
