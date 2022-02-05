@@ -67,16 +67,14 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-
 export const Container = styled.main`
-    display: flex;
-    gap: 2em;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  gap: 2em;
+  width: 90%;
+  margin: 0 auto;
 
-    
-    @media (max-width: 600px ) {
-        flex-direction: column-reverse;
-        order: 1;
-    }
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+    order: 1;
+  }
 `;
