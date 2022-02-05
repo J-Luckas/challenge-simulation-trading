@@ -3,3 +3,4 @@ node_modules
 dist
 jest.config.js
 prettier.config.js
+e2e

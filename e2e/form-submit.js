@@ -1,34 +1,32 @@
-
-
 const IU = {
-    APORTE: '#aport',
-    APORTE_MENSAL: '#monthlyAport',
-    
-    BOTAO_RENDIMENTO_BRUTO: '#bruto',
-    BOTAO_RENDIMENTO_LIQUIDO: '#liquido',
+  APORTE: '#aport',
+  APORTE_MENSAL: '#monthlyAport',
 
-    PRAZO_MESES: "#deadline",
-    
-    BOTAO_INDEX_PRE: '#pre',
-    BOTAO_INDEX_POS: '#pos',
-    BOTAO_INDEX_FIXADO: '#fixado',
-    
-    RENTABILIDADE: '#rentability',
-    
-    IPCA: '#ipca',
-    CDI: '#cdi',
+  BOTAO_RENDIMENTO_BRUTO: '#bruto',
+  BOTAO_RENDIMENTO_LIQUIDO: '#liquido',
 
-    BOTAO_RESETA_FORMULARIO: '#reset-simulator-form',
-    BOTAO_RESETA_FORMULARIO_MOBILE: '#reset-simulator-form-mobile',
-    BOTAO_SIMULAR: '#submit-simulator-form',
+  PRAZO_MESES: '#deadline',
 
-    FORMULARIO: '#form-simulator'
+  BOTAO_INDEX_PRE: '#pre',
+  BOTAO_INDEX_POS: '#pos',
+  BOTAO_INDEX_FIXADO: '#fixado',
+
+  RENTABILIDADE: '#rentability',
+
+  IPCA: '#ipca',
+  CDI: '#cdi',
+
+  BOTAO_RESETA_FORMULARIO: '#reset-simulator-form',
+  BOTAO_RESETA_FORMULARIO_MOBILE: '#reset-simulator-form-mobile',
+  BOTAO_SIMULAR: '#submit-simulator-form',
+
+  FORMULARIO: '#form-simulator',
 };
 
 Feature('Test form submit');
 
 Before( ({ I }) => {
-    I.amOnPage( 'http://127.0.0.1:3001' );
+  I.amOnPage('http://127.0.0.1:3001');
 } );
 
 Scenario("Don't validate aport input", ({ I }) => {
