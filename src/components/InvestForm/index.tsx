@@ -44,6 +44,8 @@ export function InvestForm() {
   }
 
   function handleOnErrors(value: string | number, name: string) {
+    if (name === 'deadline' && value > 12) return setErrorsForm([...errorsForm, name]);
+
     if (value !== '' && !!isNaN(+value)) setErrorsForm([...errorsForm, name]);
     else if (!isNaN(+value)) {
       const copyErrorsForm: string[] = errorsForm.filter((error: string) => name !== error);
@@ -129,7 +131,7 @@ export function InvestForm() {
               }}
             />
             <small style={{ color: '#ff0000aa' }}>
-              {errorsForm.indexOf('deadline') !== -1 && 'Prazo deve ser um número!'}
+              {errorsForm.indexOf('deadline') !== -1 && 'Prazo deve ser um número e no máximo 12!'}
             </small>
           </div>
           <div className="form-group">
